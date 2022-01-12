@@ -1,0 +1,212 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>pgr</title>
+<link rel="stylesheet" href="/css/signupp.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body> -->
+<%- include("partials/header"); -%>
+<h1>waterboard</h1>
+<table class="table table-dark">
+<thead>
+<tr>
+
+
+
+<!-- <th scope="col">#</th> -->
+<th scope="col">Address</th>
+<th scope="col">Phone Number</th>
+<th scope="col">complaintid</th>
+<!-- <th scope="col">#</th>
+<th scope="col">First</th>
+<th scope="col">Last</th>
+<th scope="col">Handle</th> -->
+
+
+
+</tr>
+</thead>
+</table>
+
+
+
+
+<table class="table table-dark">
+
+
+
+
+<tbody>
+<% if(items.length > 0){ %>
+<% for(var i = 0;i < items.length;i++) { %>
+<tr>
+
+
+
+<td><%= items[i].phonenumber %></td>
+<td><%= items[i].address %></td>
+<td><%= items[i].complaintid %></td>
+
+
+
+</tr>
+<% } %>
+<% } %>
+
+
+
+
+</tbody>
+</table>
+<h1>electricity</h1>
+<table class="table table-dark">
+<thead>
+<tr>
+
+
+
+<th scope="col">Address</th>
+<th scope="col">Phone Number</th>
+<th scope="col">Complaint id</th>
+<!-- <th scope="col">#</th>
+<th scope="col">First</th>
+<th scope="col">Last</th>
+<th scope="col">Handle</th> -->
+
+
+
+</tr>
+</thead>
+</table>
+
+
+
+<table class="table table-dark">
+
+
+
+<tbody>
+<% if(items1.length > 0){ %>
+<% for(var i = 0;i < items1.length;i++) { %>
+<tr>
+
+
+
+<td><%= items1[i].phonenumber %></td>
+<td><%= items1[i].address %></td>
+<td><%= items1[i].complaintid %></td>
+
+
+
+</tr>
+<% } %>
+<% } %>
+
+
+
+
+</tbody>
+</table>
+<h1>Sewage board</h1>
+<table class="table table-dark">
+<thead>
+<tr>
+
+
+
+<th scope="col">Address</th>
+<th scope="col">Phone Number</th>
+<th scope="col">Complaint id</th>
+<!-- <th scope="col">#</th>
+<th scope="col">First</th>
+<th scope="col">Last</th>
+<th scope="col">Handle</th> -->
+
+
+
+</tr>
+</thead>
+</table>
+<table class="table table-dark">
+
+
+
+<tbody>
+<% if(items2.length > 0){ %>
+<% for(var i = 0;i < items2.length;i++) { %>
+<tr>
+
+
+
+<td><%= items2[i].phonenumber %></td>
+<td><%= items2[i].address %></td>
+<td><%= items2[i].complaintid %></td>
+
+
+
+</tr>
+<% } %>
+<% } %>
+
+
+
+
+</tbody>
+</table>
+
+
+
+<h1>Road Maintenance</h1>
+<table class="table table-dark">
+<thead>
+<tr>
+
+
+
+<th scope="col">Address</th>
+<th scope="col">Phone Number</th>
+<th scope="col">Complaint id</th>
+<!-- <th scope="col">#</th>
+<th scope="col">First</th>
+<th scope="col">Last</th>
+<th scope="col">Handle</th> -->
+
+
+
+</tr>
+</thead>
+</table>
+<table class="table table-dark">
+
+
+
+<tbody>
+<% if(items3.length > 0){ %>
+<% for(var i = 0;i < items3.length;i++) { %>
+<tr>
+
+
+
+<td><%= items3[i].phonenumber %></td>
+<td><%= items3[i].address %></td>
+<td><%= items3[i].complaintid %></td>
+
+
+
+</tr>
+<% } %>
+<% } %>
+
+
+
+
+</tbody>
+</table>
+
+
+<%- include("partials/footer"); -%>
+<!-- </body>
+</html> -->

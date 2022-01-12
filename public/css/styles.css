@@ -1,0 +1,376 @@
+/* :root{
+     --darkgray: #212329;
+    --brightred: #F94230;
+    --lightred:#f9433dcc;
+}
+* { */
+  /* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+} */
+
+.nav-container {
+    width: 100%;
+    background-color:rgb(217, 231, 243);
+
+}
+
+#navmenu{
+    background-color: white;
+  }
+
+
+  .logo-img{
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+  }
+  .nav-item{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .item-content{
+    color: #292b29;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+.Navbar-items{
+    padding:20px;
+    line-height: 1px;
+
+}
+
+#navbar-logo{
+    color: black;
+    justify-self: start;
+     margin-left: 20px;
+
+}
+
+#navbar-logo{
+    cursor: pointer;
+
+}
+
+.nav-menu{
+    display: grid;
+    /* grid-template-columns: repeat(5, auto); */
+     list-style: none;
+    text-align: center;
+    width: 70%;
+    /* justify-self: end; */
+ }
+
+.nav-links {
+    color:black;
+    text-decoration: none;
+
+}
+
+ .nav-links:hover {
+    color: darkcyan;
+    transition: all 0.2s ease-out;
+
+}
+
+.nav-links-btn {
+    background-color:whitesmoke;
+    padding: 6px 16px;
+    border-radius: 4px;
+
+}
+
+
+.nav-links-btn:hover {
+    background-color:rgb(93, 130, 185);
+    color:black;
+    padding: 5px 15px;
+    border-radius: 4px;
+    /* border:solid 1px var(--brightred); */
+    transition: all 0.3s ease-out;
+}
+
+.header-iconicproject{
+    color: #68a1cc;
+    text-align: center;
+    margin :20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.About_us_intro{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.card-group{
+    padding: 50px;
+    margin: 80px;
+}
+
+.btn{
+    align-items: center;
+}
+
+.img-fluid{
+    width: 160px;
+    height: 160px;
+}
+.img-fluidreg{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.formarea{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+/* loginpage below */
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn-login {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn-login {
+    font-size: 15px;
+    font-weight: bold;
+}
+/* dashboard page css */
+.img{
+  height:150px;
+  width:100%;
+}
+
+.item{
+  padding-left:5px;
+  padding-right:5px;
+}
+.item-card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.item-card-title{
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+.item-card-title i{
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg);
+  color:#18d4ca;
+
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+/* login page below */
+/* .logo-img1{
+  height: 210px;
+    width: 210px;
+    margin-left: 10px;
+}
+
+.body {
+  background-image: linear-gradient(135deg, white 10%, white 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
+
+.box-form {
+  margin: 0 auto;
+  width: 60%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items:stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+.box-form .left {
+  color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.assureshift.in/sites/default/files/images/blog/best-places-to-live-mysore.jpg");
+  overflow: hidden;
+}
+.box-form .left .overlay {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: #5961f9ad;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.box-form .left .overlay h1 {
+  font-size: 10vmax;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.box-form .left .overlay span p {
+  margin-top: 30px;
+  font-weight: 900;
+}
+.box-form .left .overlay span a {
+  background: #3b5998;
+  color: #FFFFFF;
+  margin-top: 10px;
+  padding: 14px 50px;
+  border-radius: 100px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 1px #042d4657;
+}
+.box-form .left .overlay span a:last-child {
+  background: #1dcaff;
+  margin-left: 30px;
+}
+.box-form .right {
+  padding: 40px;
+  overflow: hidden;
+}
+@media (max-width: 980px) {
+  .box-form .right {
+    width: 100%;
+  }
+}
+.box-form .right h5 {
+  font-size: 6vmax;
+  line-height: 0;
+}
+.box-form .right p {
+  font-size: 14px;
+  color: #B0B3B9;
+}
+.box-form .right .inputs {
+  overflow: hidden;
+}
+.box-form .right  {
+  width: 800%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #B0B3B9;
+}
+.inputlogin{
+  width: 800%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #B0B3B9;
+}
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+} */
+/* .box-form .right .remember-me--forget-password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+} */
+/* .box-form .right button {
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 4px 20px 0px rgb(90, 159, 206);
+  background-image: linear-gradient(135deg, rgb(90, 159, 206) 10%, rgb(90, 159, 206)100%);
+} */
+
+/* label {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+} */
+
+/* label::before {
+  content: ' \f00c';
+  position: absolute;
+  font-family: FontAwesome;
+  background: transparent;
+  border: 3px solid rgb(90, 159, 206);
+  border-radius: 4px;
+  color: transparent;
+  left: -30px;
+  transition: all 0.2s linear;
+} */
+
+/* label:hover::before {
+  font-family: FontAwesome;
+  content: ' \f00c';
+  color: #fff;
+  cursor: pointer;
+  background: rgb(90, 159, 206);
+}
+
+label:hover::before .text-checkbox {
+  background: rgb(90, 159, 206);
+}
+
+label span.text-checkbox {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+label input[type="checkbox"] {
+  display: none;
+} */

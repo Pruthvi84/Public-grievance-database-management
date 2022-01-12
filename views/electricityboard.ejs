@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Electricity Board</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body> -->
+  <%- include("partials/header"); -%>
+    <form action="/electricityboard" method="post" class="formarea">
+  <div class="form-group">
+    <label for="UserId">UserId</label>
+    <input type="text" class="form-control" id="UserID" aria-describedby="UserHelp" placeholder="Enter your UserID">
+    <small id="UserHelp" class="form-text text-muted">Your userId will be confidential,will not be shared with anyone</small>
+  </div>
+  <div class="form-group">
+    <label for="Address">Address</label>
+    <input type="text" class="form-control" id="Address" placeholder="Address">
+  </div>
+  <div class="form-group">
+    <label for="Landmark">Nearest Landmark</label>
+    <input list="Landmark" name="Landmark" class="form-control" placeholder="Nearest Landmark">
+    <datalist  id="Landmark">
+
+      <option value="JP Nagar">
+      <option value="VishveshwaraNagar">
+      <option value="Bogadi">
+      <option value="SiddharthNagar">
+      <option value="Ramkrishna Nagar">
+      <option value="Srirampura">
+     </datalist>
+  </div>
+  <div class="form-group">
+     <label for="LineBreakDown">Is your problems related to Line Breakdown?</label><br>
+    <div class="form-check form-check-inline mb-0 me-4">
+    <input class="form-check-input" type="radio" name="LineBreakDown" id="YesBreakDown" value="Yes" required/>
+    <label class="form-check-label" for="YesBreakDown">Yes</label>
+    </div>
+
+  <div class="form-check form-check-inline mb-0 me-4">
+  <input class="form-check-input" type="radio" name="LineBreakDown" id="NoBreakDown" value="No" required/>
+  <label class="form-check-label" for="NoBreakDown">No</label>
+  </div>
+</div>
+<div class="form-group">
+<label for="BillingIssue">Is your complain related to billing issues?</label><br>
+<div class="form-check form-check-inline mb-0 me-4">
+<input class="form-check-input" type="radio" name="BillingIssue" id="YesBilling" value="Yes" required/>
+<label class="form-check-label" for="YesBilling">Yes</label>
+</div>
+
+<div class="form-check form-check-inline mb-0 me-4">
+<input class="form-check-input" type="radio" name="BillingIssue" id="NoBilling" value="No" required/>
+<label class="form-check-label" for="NoBilling">No</label>
+</div>
+</div>
+<div class="form-group">
+<label for="NewConnection">Is your complain related to necessity of new connection?</label><br>
+
+<div class="form-check form-check-inline mb-0 me-4">
+<input class="form-check-input" type="radio" name="NewConnection" id="YesConnection" value="Yes" required/>
+<label class="form-check-label" for="YesConnection">Yes</label>
+</div>
+
+<div class="form-check form-check-inline mb-0 me-4">
+<input class="form-check-input" type="radio" name="NewConnection" id="NoConnection" value="No" required/>
+<label class="form-check-label" for="NoConnection">No</label>
+</div>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Use this TextBox to kindly inform us more about the complaints you are facing </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include("partials/footer"); -%>
+  <!-- </body>
+</html> -->

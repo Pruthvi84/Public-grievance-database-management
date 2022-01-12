@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Water Board</title>
+</head>
+
+<body>
+  <form action="/" method="post">
+ <label for="UserID">UserId *</label><br>
+ <input type="text" id="UserID" name="UserID" ><br><br>
+ <label for="Address">Address</label><br>
+ <input type="text" id="Address" name="Address"><br><br>
+ <label for="WaterAvailability">Water Availability Problems</label><br>
+ <input list="WaterAvailability" name="WaterAvailability" placeholder="Yes/No">
+ <datalist id="WaterAvailability">
+   <option value="Yes">
+   <option value="No">
+  </datalist><br><br>
+  <label for="MeterFault">Meter Fault Problems</label><br>
+  <input list="MeterFault" name="MeterFault" placeholder="Yes/No">
+  <datalist id="MeterFault">
+    <option value="Yes">
+    <option value="No">
+   </datalist><br><br>
+   <label for="Pipeline">Pipeline and Infrastructure Problems</label><br>
+   <input list="Pipeline" name="Pipeline" placeholder="Yes/No">
+   <datalist id="Pipeline">
+     <option value="Yes">
+     <option value="No">
+    </datalist>
+
+
+ <input type="submit" value="Submit">
+</form>
+   -->
+   <!-- <!DOCTYPE html>
+   <html lang="en" dir="ltr">
+     <head>
+       <meta charset="utf-8">
+       <title>Water Board</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     </head>
+     <body> -->
+     <%- include("partials/header"); -%>
+       <form action="/waterboard" method="post" class="formarea">
+     <div class="form-group">
+       <label for="UserId">UserId</label>
+       <input name="UserIdWB" type="text" class="form-control" id="UserID" aria-describedby="UserHelp" placeholder="Enter your UserID" required>
+       <small id="UserHelp" class="form-text text-muted">Your userId will be confidential,will not be shared with anyone</small>
+     </div>
+     <div class="form-group">
+       <label for="Address">Address</label>
+       <input type="text" name="AddressWaterBoard" class="form-control" id="Address" placeholder="Address" required>
+     </div>
+     <div class="form-group">
+       <label for="Landmark">Nearest Landmark</label>
+       <input list="Landmark" name="Landmark" class="form-control" placeholder="Nearest Landmark">
+       <datalist  id="Landmark">
+
+         <option value="JP Nagar">
+         <option value="VishveshwaraNagar">
+         <option value="Bogadi">
+         <option value="SiddharthNagar">
+         <option value="Ramkrishna Nagar">
+         <option value="Srirampura">
+        </datalist>
+     </div>
+     <div class="form-group">
+     <label for="WaterAvailability">Is your complain related to availability of water?</label><br>
+
+      <div class="form-check form-check-inline mb-0 me-4">
+      <input class="form-check-input" type="radio" name="WaterAvailability" id="YesWater" value="Yes" required/>
+      <label class="form-check-label" for="YesWater">Yes</label>
+      </div>
+
+   <div class="form-check form-check-inline mb-0 me-4">
+   <input class="form-check-input" type="radio" name="WaterAvailability" id="NoWater" value="No" required/>
+   <label class="form-check-label" for="NoWater">No</label>
+   </div>
+</div>
+   <div class="form-group">
+   <label for="MeterFault">Is your complain related to meter fault?</label><br>
+   <div class="form-check form-check-inline mb-0 me-4">
+   <input class="form-check-input" type="radio" name="MeterFault" id="YesMeter" value="Yes" required/>
+   <label class="form-check-label" for="YesMeter">Yes</label>
+   </div>
+
+<div class="form-check form-check-inline mb-0 me-4">
+<input class="form-check-input" type="radio" name="MeterFault" id="NoWater" value="No" required/>
+<label class="form-check-label" for="NoMeter">No</label>
+</div>
+
+   </div>
+   <div class="form-group">
+   <label for="PipelineAndInfrastructure">Is your complain related to necessity of Pipeline and Infrastructure?</label><br>
+   <div class="form-check form-check-inline mb-0 me-4">
+   <input class="form-check-input" type="radio" name="PipelineAndInfrastructure" id="YesPipeline" value="Yes" required/>
+   <label class="form-check-label" for="YesPipeline">Yes</label>
+   </div>
+
+<div class="form-check form-check-inline mb-0 me-4">
+<input class="form-check-input" type="radio" name="PipelineAndInfrastructure" id="NoPipeline" value="No" required/>
+<label class="form-check-label" for="NoPipeline">No</label>
+</div>
+ </div>
+   <div class="form-group">
+       <label for="exampleFormControlTextarea1">Use this TextBox to kindly inform us more about the complaints you are facing </label>
+       <textarea class="form-control" id="exampleFormControlTextarea1" name="Govinda" rows="3"></textarea>
+     </div>
+     <input type="submit" class="btn btn-primary">
+   </form>
+   <%- include("partials/footer"); -%>
+     <!-- </body>
+   </html> -->

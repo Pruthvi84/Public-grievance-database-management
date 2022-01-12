@@ -1,0 +1,53 @@
+<%- include("partials/header"); -%>
+<form  action="index.html" method="post">
+  <div class="form-group">
+    <label for="UserId">UserId</label>
+    <input name="UserIdWB" type="text" class="form-control" id="UserID" aria-describedby="UserHelp" placeholder="Enter your UserID" required>
+    <small id="UserHelp" class="form-text text-muted">Your userId will be confidential,will not be shared with anyone</small>
+  </div>
+  <div class="form-group">
+    <label for="Landmark">Starting Landmark</label>
+    <input list="Landmark" name="Landmark" class="form-control" placeholder="Starting Landmark">
+    <datalist  id="Landmark">
+
+      <option value="JP Nagar">
+      <option value="VishveshwaraNagar">
+      <option value="Bogadi">
+      <option value="SiddharthNagar">
+      <option value="Ramkrishna Nagar">
+      <option value="Srirampura">
+     </datalist>
+  </div>
+  <div class="form-group">
+    <label for="Landmark">Ending Landmark</label>
+    <input list="Landmark" name="Landmark" class="form-control" placeholder="Ending Landmark">
+    <datalist  id="Landmark">
+
+      <option value="JP Nagar">
+      <option value="VishveshwaraNagar">
+      <option value="Bogadi">
+      <option value="SiddharthNagar">
+      <option value="Ramkrishna Nagar">
+      <option value="Srirampura">
+     </datalist>
+  </div>
+  <div class="form-group">
+  <label for="StaffBehaviour">Is your complain related to misbehaviour by staff in public transport</label><br>
+
+   <div class="form-check form-check-inline mb-0 me-4">
+   <input class="form-check-input" type="radio" name="StaffBehaviour" id="YesStaff" value="Yes" required/>
+   <label class="form-check-label" for="YesStaff">Yes</label>
+   </div>
+
+<div class="form-check form-check-inline mb-0 me-4">
+<input class="form-check-input" type="radio" name="StaffBehaviour" id="NoWater" value="No" required/>
+<label class="form-check-label" for="NoStaff">No</label>
+</div>
+</div>
+<div class="form-group">
+<label for="exampleFormControlTextarea1">Use this TextBox to kindly inform us more about the complaints you are facing </label>
+<textarea class="form-control" name="textRT" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include("partials/footer"); -%>
