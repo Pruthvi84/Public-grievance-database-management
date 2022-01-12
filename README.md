@@ -15,5 +15,6 @@ Public Grievance Redress and Monitoring System Database is an online platform av
 <img width="960" alt="2022-01-03 (5)" src="https://user-images.githubusercontent.com/67594685/149190427-65db2933-25b5-45da-aaf9-b815ebd4546a.png">
 
 **Complaint Registration Portal**
+
 <img width="960" alt="2022-01-03 (6)" src="https://user-images.githubusercontent.com/67594685/149190615-5cbab8b6-8922-4faa-bc0d-f5279ed4bb52.png">
 
